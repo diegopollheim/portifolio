@@ -2,13 +2,12 @@
 .section-central {
     
     position: absolute;
-    padding: 25px;
+    padding: 50px;
     border: 2px dashed grey;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
-
 
 img {
     width: 80px;
@@ -32,13 +31,16 @@ input {
     height: 40px;
     width: 300px;
     margin-top: 20px;
-    font-size: 16pt;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 1px solid rgb(195,195,195);
+    border-radius: 5px;
     color: #343434;
 }
 
 button {
     width: 300px;
-    height: 40px;
+    height: 45px;
     margin-top: 25px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
@@ -47,5 +49,7 @@ button {
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;    
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    border: 0;
 }
