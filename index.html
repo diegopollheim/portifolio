@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Portifólio</title>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="img-wrapper">
-                <img src="imagens/bg.jpg" alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Portifólio</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Menu hamburguer -->
+            <div class="hamburger">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
             </div>
-            <div class='banner'>
-                <h1>Web Developer & Front-End Designer</h1>
-                <p>Diego Pollheim</p>
-                <button>Saiba mais</button>
+
+            <!-- Home inicial com nome e profissão -->
+            <header>
+                <div class="img-wrapper">
+                    <img src="imagens/bg.jpg" alt="">
+                </div>
+                <div class='banner'>
+                    <h1>Web Developer & Front-End Designer</h1>
+                    <p>Diego Pollheim</p>
+                    <button>Saiba mais</button>
+                </div>            
+            </header>
+
+            <!-- Menu lateral -->
+            <div class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Conhecimentos</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-            
-        </header>
-    </div>
-</body>
+        </div>
+    </body>
+    <!-- Carregamento do Menu Lateral -->
+    <script src="script.js"></script>
 </html>
