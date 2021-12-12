@@ -5,6 +5,7 @@ Meu Portifólio
 2. Header Inicial criado.
 3. Menu lateral criado
 4. Sessão conhecimentos Criada
+5. Sessão projetos Iniciada (Em andamento...)
 
 ## icones
 - :package: nova funcionalidade

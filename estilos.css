@@ -17,7 +17,7 @@
     height: 2rem;
     width: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -59,14 +59,14 @@ header {
 .img-wrapper {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.7;
     animation: zoom 25s;
 }
 
@@ -141,6 +141,7 @@ header {
     right: -20rem;
     top: 0;
     transition: all 1s;
+    z-index: 999;
 }
 
 /* classe aplicada para mostrar ou ocultar o menu lateral */
@@ -286,5 +287,92 @@ header {
     width: 100%;    
 }
 
+.projetos {
+    display: flex;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
 
+.card {
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+}
 
+.card-img-wrapper {
+    background-color: #262626;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: 0.8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .3;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 2rem;
+    bottom: 0;
+    padding-bottom: 0;
+    text-shadow: 0.3rem 0.1rem 0.3rem rgba(0,0,0,.4);
+    transition: all .3s;
+}
+
+.card-info h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+.card-info h3 {
+    font-family: var(--font-secundary);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1.5rem;}
+
+.card-info p {
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
