@@ -1,186 +1,287 @@
 <!-- <!DOCTYPE html> -->
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <title>Diego Pollheim</title>
-</head>
 
-<body>
-    <div class="container">
-        <!-- Menu hamburguer -->
-        <div class="hamburger">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
+    <script>
+      function handleClick() {
+        alert("clicque");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container" id="inicio">
+      <!-- Menu hamburguer -->
+      <div class="hamburger">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+      </div>
+
+      <!-- Home inicial com nome e profissão -->
+      <header>
+        <div class="img-wrapper">
+          <img src="imagens/bg.jpg" alt="" />
         </div>
 
-        <!-- Home inicial com nome e profissão -->
-        <header>
-            <div class="img-wrapper">
-                <img src="imagens/bg.jpg" alt="">
-            </div>
-            <div class='banner'>
-                <h1>Web Developer & Front-End Designer</h1>
-                <p>Diego Pollheim</p>
-                <button>Saiba mais</button>
-            </div>
-        </header>
+    </header>
+        <div class="banner">
+          <h1>Web Developer & Front-End Designer</h1>
+          <p>Diego Pollheim</p>
+          <a href="#conhecimentos"><button>Saiba mais</button></a>
+        </div>
+        
+      <!-- Menu lateral -->
+      <aside class="sidebar">
+        <nav>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#inicio" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#conhecimentos" class="menu-link">Conhecimentos</a>
+            </li>
+            <li class="menu-item">
+              <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contato" class="menu-link">Contato</a>
+            </li>
+          </ul>
+        </nav>
 
-        <!-- Menu lateral -->
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="social-media">
+          <a href="https://www.instagram.com/diego.pollheim/" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/diegopollheim" target="blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/diego-pollheim-979a5a1a7/"
+            target="blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </aside>
 
-            <div class="social-media">
-                <a href="https://www.instagram.com/diego.pollheim/" target="blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/diegopollheim" target="blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/diego-pollheim-979a5a1a7/" target="blank"><i
-                        class="fab fa-linkedin"></i></a>
+      <!-- Sessão Conhecimentos -->
+      <section class="sessao-conhecimentos" id="conhecimentos">
+        <div class="sessao-header">
+          <h1>Conhecimentos</h1>
+        </div>
+        <div class="conhecimentos">
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-html5" style="color: #ff4c1e"></i>
+              <h3>HTML</h3>
             </div>
-        </aside>
+            <div class="conhecimento-text">
+              <p>
+                Falando da responsável por basicamente tudo quando se fala de
+                desenvolvimento web, temos essa tecnologia de marcação, que todo
+                desenvolvedor já tem na bagagem. Tive o primeiro contato com ela
+                em 2008 com o primeiro site feito totalmente no bloco de notas
+                mesmo.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-css3" style="color: #004ce8"></i>
+              <h3>CSS</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Chamado de linguagem Cascading Style Sheet e é usado para
+                estilizar elementos escritos em uma linguagem de marcação como
+                HTML. O CSS separa o conteúdo da representação visual do site.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <img
+                src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+              />
+              <h3>JavaScript</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Claro que não pode faltar o JavaScript. Ele abraça o html e css
+                como se fossem seus filhos, afinal é com ele que tudo ganha vida
+                aos olhos dos usuários.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <img
+                src="https://img.icons8.com/color/50/000000/c-sharp-logo.png"
+              />
+              <h3>C-Sharp</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Linguagem responsável e marcante na minha carreira de iniciante,
+                foi com ela que eu estruturei minha lógica de programação e
+                desde então venho aprimorando a cada dia.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fas fa-database"></i>
+              <h3>MySQL</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Possuindo os principais conceitos que formam um banco de dados,
+                tenho autonomia para seguir com projetos. Fazendo consultas,
+                alterações ou inserindo dados nas tabelas.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimento">
+            <div class="conhecimento-header">
+              <i class="fab fa-github" style="color: black"></i>
+              <h3>Git e GitHub</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Quando se fala em versionamento de código, não pode ficar de
+                fora essas duas ferramentas essenciais para manter as coisas em
+                ordem.
+              </p>
+            </div>
+          </div>
+          <div class="conhecimentos-img-wrapper">
+            <img src="imagens/code.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Fim dos conhecimentos -->
 
-        <!-- Sessão Conhecimentos -->
-        <section class="sessao-conhecimentos">
-            <div class="sessao-header">
-                <h1>Conhecimentos</h1>
+      <!-- Sessão Projetos -->
+      <section class="sessao-projetos" id="projetos">
+        <div class="sessao-header">
+          <h1>Projetos</h1>
+        </div>
+        <div class="projetos">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img
+                src="imagens/projeto1.jpg"
+                alt="Imagem do projeto numero 1"
+              />
             </div>
-            <div class="conhecimentos">
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-html5" style="color: #FF4C1E;"></i>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Falando da responsável por basicamente tudo quando se fala de desenvolvimento web, temos essa
-                            tecnologia de marcação, que todo desenvolvedor já tem na bagagem. Tive o primeiro contato
-                            com ela em 2008 com o primeiro site feito totalmente no bloco de notas mesmo.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-css3" style="color: #004CE8;"></i>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Digamos que o CSS é o Paint para o desenvolvedor Front-End, pois somente conhecendo ele,
-                            conseguimos ver o poder que ele tem ao ser aplicado de forma correta.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Claro que não pode faltar o JavaScript. Ele abraça o html e css como se fossem seus filhos,
-                            afinal é com ele que tudo ganha vida aos olhos dos usuários.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <img src="https://img.icons8.com/color/50/000000/c-sharp-logo.png" />
-                        <h3>C-Sharp</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Linguagem responsável e marcante na minha carreira de iniciante, foi com ela que eu
-                            estruturei minha lógica de programação e desde então venho aprimorando a cada dia.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fas fa-database"></i>
-                        <h3>MySQL</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Possuindo os principais conceitos que formam um banco de dados, tenho autonomia para seguir
-                            com projetos. Fazendo consultas, alterações ou inserindo dados nas tabelas.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-github" style="color: black;"></i>
-                        <h3>Git e GitHub</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Quando se fala em versionamento de código, não pode ficar de fora essas duas ferramentas
-                            essenciais para manter as coisas em ordem.</p>
-                    </div>
-                </div>
-                <div class="conhecimentos-img-wrapper">
-                    <img src="imagens/code.png" alt="">
-                </div>
+            <div class="card-info">
+              <h2>Projeto 1</h2>
+              <h3>HTML, CSS</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                laudantium expedita obcaecati recusandae exercitationem
+                praesentium, quae, eligendi voluptas reiciendis amet asperiores,
+                maxime itaque blanditiis labore sunt porro velit molestiae
+                voluptatum!
+              </p>
+              <button class="btn">Saiba mais</button>
             </div>
-        </section>
-        <!-- Fim dos conhecimentos -->
+          </div>
 
-
-        <!-- Sessão Projetos -->
-        <section class="sessao-projetos">
-            <div class="sessao-header">
-                <h1>Projetos</h1>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img
+                src="imagens/projeto2.jpg"
+                alt="Imagem do projeto numero 2"
+              />
             </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/projeto1.jpg" alt="Imagem do projeto numero 1">
-                    </div>
-                    <div class="card-info">
-                        <h2>Projeto 1</h2>
-                        <h3>HTML, CSS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium expedita
-                            obcaecati recusandae exercitationem praesentium, quae, eligendi voluptas reiciendis amet
-                            asperiores, maxime itaque blanditiis labore sunt porro velit molestiae voluptatum!</p>
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/projeto2.jpg" alt="Imagem do projeto numero 2">
-                    </div>
-                    <div class="card-info">
-                        <h2>Projeto 2</h2>
-                        <h3>Arduino</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ipsum aut sit
-                            voluptas incidunt vitae, nesciunt rerum ratione, unde aperiam earum architecto exercitationem
-                            doloribus voluptate ducimus quo quaerat. Accusamus, sed!</p>
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/projeto3.jpg" alt="Imagem do projeto numero 3">
-                    </div>
-                    <div class="card-info">
-                        <h2>Projeto 3</h2>
-                        <h3>Subtitulo 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, a eum expedita harum
-                            velit
-                            hic magni eius eveniet in tempora sint, molestias, iusto ducimus at exercitationem
-                            facere
-                            ipsam maxime atque.</p>
-                        <button>Saiba mais</button>
-                    </div>
-                </div>
+            <div class="card-info">
+              <h2>Projeto 2</h2>
+              <h3>Arduino</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati ipsum aut sit voluptas incidunt vitae, nesciunt rerum
+                ratione, unde aperiam earum architecto exercitationem doloribus
+                voluptate ducimus quo quaerat. Accusamus, sed!
+              </p>
+              <button class="btn">Saiba mais</button>
             </div>
-        </section>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img
+                src="imagens/projeto3.jpg"
+                alt="Imagem do projeto numero 3"
+              />
+            </div>
+            <div class="card-info">
+              <h2>Projeto 3</h2>
+              <h3>Subtitulo 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                a eum expedita harum velit hic magni eius eveniet in tempora
+                sint, molestias, iusto ducimus at exercitationem facere ipsam
+                maxime atque.
+              </p>
+              <button class="btn">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim sessão projetos -->
+
+      <!-- Sessão contato -->
+      <section class="sessao-contato" id="contato">
+        <div class="contato-wrapper">
+          <div class="contato-left"></div>
+          <div class="contato-right">
+            <h1>Contato</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" id="nome" />
+                <label for="nome" class="field-label">Nome</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="email" />
+                <label for="email" class="field-label">E-mail</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field" id="mensagem"></textarea>
+                <label for="mensagem" class="field-label">Mensagem</label>
+              </div>
+              <button type="submit" class="btn btn-submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
-<!-- Carregamento do Menu Lateral -->
-<script src="script.js"></script>
+  </body>
 
+  <!-- Carregamento do Menu Lateral -->
+  <script src="script.js"></script>
 </html>
