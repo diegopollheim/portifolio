@@ -20,7 +20,6 @@ html {
   --font-action: "Muli", serif;
 }
 
-
 .container {
   width: 100vw;
 }
@@ -70,14 +69,14 @@ header {
   font-weight: 200;
   text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   line-height: 3.5rem;
-  
+
   opacity: 0;
   animation: moveBanner 1s 0.5s forwards;
 }
 
 @media only screen and (max-width: 600px) {
   .banner h1 {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
 }
 
@@ -90,7 +89,6 @@ header {
   opacity: 0;
   animation: moveBanner 1s 0.7s forwards;
 }
-
 
 @media only screen and (max-width: 600px) {
   .banner p {
@@ -123,7 +121,6 @@ header {
   animation: moveBanner 1s 0.9s forwards;
 }
 
-
 @media only screen and (max-width: 600px) {
   .banner button {
     padding: 0.8rem 2rem;
@@ -146,11 +143,20 @@ header {
 
 /* SESSAO CONHECIMENTOS */
 
+.wrapper-conhecimentos {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .conhecimentos-mobile {
   flex-direction: column;
   row-gap: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  max-width: 980px;
 }
 
 .skill-title {
@@ -159,15 +165,14 @@ header {
   line-height: 100%;
   color: #555;
   margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .skill {
-  height: 18px;
+  height: 12px;
   background-color: #dadada;
   border-radius: 10px;
 }
-
-
 
 .skill .html {
   border-top-left-radius: 10px;
@@ -193,7 +198,7 @@ header {
   background-color: green;
 }
 
-.skill .logica {
+.skill .kanban {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   width: 90%;
@@ -209,14 +214,44 @@ header {
   background-color: green;
 }
 
+.skill .git {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50%;
+  height: 100%;
+  background-color: green;
+}
+
+.skill .github {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 75%;
+  height: 100%;
+  background-color: green;
+}
+
+.skill .mysql {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 65%;
+  height: 100%;
+  background-color: green;
+}
+
+.skill .logica {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 90%;
+  height: 100%;
+  background-color: green;
+}
+
 
 @media only screen and (min-width: 600px) {
   .conhecimentos-mobile h5 {
     font-size: 30px;
     margin-top: 20px;
   }
-
-
 }
 
 .sessao-conhecimentos {
@@ -237,7 +272,6 @@ header {
   border-bottom: solid 3px #6a3093;
   margin-bottom: 1.5rem;
 }
-
 
 @media only screen and (max-width: 600px) {
   .sessao-conhecimentos .sessao-header h1 {
@@ -279,17 +313,14 @@ header {
   width: 100%;
 }
 
-
 .projetos {
   position: relative;
   display: flex;
   justify-content: space-evenly;
 }
 
-
 @media only screen and (max-width: 600px) {
   .sessao-projetos .sessao-header h1 {
     font-size: 35px;
   }
 }
-
