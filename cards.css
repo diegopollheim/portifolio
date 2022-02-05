@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Mulish:ital,wght@0,300;0,400;0,500;1,200;1,300&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Mulish:ital,wght@0,300;0,500;1,200;1,300&family=Press+Start+2P&display=swap");
+
+
+body {
+  /* margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
+  font-family: var(--font-primary);
+}
+
+:root {
+  --font-primary: "Baloo Da 2", serif;
+  --font-secundary: "Josefin Slab", serif;
+  --font-action: "Muli", serif;
+  --font-game: "Press Start 2P", serif;
+
+  --color-primary: #555;
+}
+.container-projetos {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.card {
+  padding: 25px;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 15px;
+/* transition: all .5s; */
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  /* background-image: url("/imagens/projeto1.jpg"); */
+  /* background-color: #a9c9ff; */
+  /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
+}
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+&.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.java {
+  background-color: #fffc00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.python {
+  background-color: #00fffc;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cSharp {
+  background-color: #fc00ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.face2 {
+  transition: 0.5s;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    position: relative;
+  }
+}
+.face1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.face1:hover img {
+  /* height: 60px; */
+  opacity: 0.3;
+  font-size: 1.4rem;
+  color: aliceblue;
+  transition: all .3s;
+}
+.card:hover .content {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+  color: aliceblue;
+}
+
+.content.memory-game h2 {
+  font-family: var(--font-game);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.content button {
+  margin-top: auto;
+  margin-bottom: 25px;
+  align-self: flex-end;
+  width: 8rem;
+  height: 2.5rem;
+  font-family: var(--font-action);
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari */
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  height: 65%;
+  position: absolute;
+  padding: 2rem;
+  font-size: 18px;
+  bottom: 0;
+  color: aliceblue;
+  padding-bottom: 0;
+  text-shadow: 0.3rem 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+  transition: all .3s;
+}
+
+.card:nth-child(1) .face.face2 {
+  background-image: -webkit-linear-gradient(left, #a90f90 55%, #0c1a51);
+  border-radius: 15px;
+}
+
+.card:nth-child(2) .face.face2 {
+  background-image: -webkit-linear-gradient(left, #a90f90 55%, #0c1a51);
+  border-radius: 15px;
+  border-radius: 15px;
+}
+
+.card:nth-child(3) .face.face2 {
+  background-image: -webkit-linear-gradient(left, #a90f90 55%, #0c1a51);
+  border-radius: 15px;
+  border-radius: 15px;
+}
