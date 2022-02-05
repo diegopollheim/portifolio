@@ -41,10 +41,14 @@ body {
   background: #000;
   border-radius: 15px;
 /* transition: all .5s; */
-  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+ 
   /* background-image: url("/imagens/projeto1.jpg"); */
   /* background-color: #a9c9ff; */
   /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(55,55,55,.8);
 }
 .face {
   position: absolute;
