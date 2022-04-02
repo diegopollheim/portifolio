@@ -60,47 +60,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-&.face1 {
-  box-sizing: border-box;
-  padding: 20px;
 
-  h2 {
-    margin: 0;
-    padding: 0;
-  }
-}
-.java {
-  background-color: #fffc00;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-.python {
-  background-color: #00fffc;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cSharp {
-  background-color: #fc00ff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.face2 {
-  transition: 0.5s;
-
-  h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 10em;
-    color: #fff;
-    transition: 0.5s;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    position: relative;
-  }
-}
 .face1 img {
   height: 100%;
   width: 100%;

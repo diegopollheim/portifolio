@@ -225,7 +225,6 @@ header {
   background-color: green;
 }
 
-
 .skill .git {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -332,11 +331,10 @@ header {
   border: 1px solid #c7c7c7;
   border-radius: 7px;
   padding: 25px;
- 
 }
 
 .card:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .card-content {
@@ -416,11 +414,6 @@ header {
   }
 }
 
-footer {
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 .card-proj {
   border-radius: 7px;
   position: relative;
@@ -458,8 +451,8 @@ footer {
   color: white;
 }
 .card-btn-rodape {
- display: flex;
- justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .card-btn-rodape button {
@@ -474,4 +467,29 @@ footer {
   cursor: pointer;
   height: 35px;
   width: 130px;
+}
+
+footer {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer .container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .container a {
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+ transition: all 300ms;
+}
+
+
+footer .container a:hover {
+  color: #555;
 }
